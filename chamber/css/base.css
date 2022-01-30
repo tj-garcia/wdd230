@@ -1,0 +1,145 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+
+:root {
+  /*Primary Colors*/
+  --primary-color: #B3C0A4;  /*#396E94;*/
+  --secondary-color: #DCC48E;  /*#E7C24F;*/
+  --accent1-color: #B3C0A4; /*#A43312;*/
+  --accent2-color: #5E574D; /*white;*/
+
+  /*Fonts*/
+  --heading-font: 'Merriweather', serif;
+  --paragraph-font: Lato, Helvetica, sans-serif;
+
+  /* Secondary colors */
+  --headline-color-on-white: #091CFE; /* text headlines on a white background */ 
+  --headline-color-on-color: white; /* text in headlines on a colored background */ 
+  --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* text in paragraph text on a colored background */ 
+  --paragraph-background-color: #016FB9; /*black; background fill area color    */
+  --nav-link-color: #ffff;
+  --nav-background-color: #B3C0A4;
+  --nav-hover-link-color: #ffff;
+  --nav-hover-background-color: #7D6D61;
+}
+
+/* Main Sections*/
+html {
+  background-color: #B3C0A4;
+}
+body {
+  max-width: 940px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1em;
+}
+
+header {
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+  
+	max-width: 940px;
+	/*margin: 0 auto;
+	padding: 5px 0;*/
+  margin: 0;
+  padding: 0;
+  /*border-bottom: 1px solid #bbb;*/
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+
+}
+
+.logo {
+	display: flex;
+  justify-content:space-between;
+	align-items: flex-end ;
+	/*margin-left: 1rem;*/
+}
+
+.logo img {
+	width: 50%; /*80px;*/
+	height: 50%; /* auto;*/
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+
+	/*margin-left: .5rem;*/
+}
+
+.headings h1 q{
+	font-size: 2rem;
+  color: #fff;
+}
+
+.social {
+	margin-right: 1.5rem;
+}
+
+.social svg {
+	width: 25px;
+	height: auto;
+}
+
+
+/* Current Date*/
+/* Modification Date */
+.date {
+  background-color: var(--paragraph-background-color);
+  line-height: 3em;
+  font-size: 1rem;
+  color: #fff;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Nav Css*/
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 2em;
+  text-align: center;
+  font-size: 1.2em;
+  
+}
+nav > ul {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+
+}
+nav a {
+  padding:1em;
+  min-width: 70px;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+
+/* footer */
+footer {
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+  text-align: center;
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 5px 0;
+  border-bottom: 1px solid #bbb;  
+}
