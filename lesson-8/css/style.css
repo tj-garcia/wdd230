@@ -69,7 +69,7 @@ form {
   }
   
   tbody tr:nth-child(even) {
-    background-color: var(--zebra);
+    background-color: hsl(147, 38%, 73%); /*var(--zebra);*/
   }
 tbody tr:nth-child(odd) {
 	background-color:hsl(147, 38%, 73%);
