@@ -141,8 +141,8 @@ footer {
 /* Grid distribution*/
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   align-self: center;
   justify-self: center;
   font-weight: bold; 
@@ -197,4 +197,124 @@ footer {
   grid-column: 3 / 4;
   grid-row-start: 3;
   grid-row-end: 4;
+}
+
+/* FORM CSS STRUCTURE   */
+.home-form {
+  margin: auto;
+  width: 80%;
+  border: 3px solid green;
+  padding: 10px; 
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=phone], input[type=date], input[type=email],textarea, select {
+  width: 90%;
+  padding: 5%;
+  margin: 8px 0;
+}
+
+button, input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  border-radius: 5px;
+}
+
+
+.form-table {
+  font-size: large;
+  display: grid;
+  grid-template-columns: auto repeat(2, 1fr);
+  grid-template-rows: repeat(9, auto);
+  margin: auto;
+}
+
+.form-title {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  justify-self: center;
+}
+
+/* form labels*/
+.form-row1, .form-row2, .form-row3, .form-row4, .form-row5, .form-row6, .form-row7, .form-row9 {
+  grid-column: 1 / 2;
+  align-self: center;
+  font-weight: bold; 
+}
+
+
+.form-row1 {
+  grid-row: 2;
+}
+
+.form-row2 {
+  grid-row: 3;
+}
+
+.form-row3 {
+  grid-row: 4;
+}
+
+.form-row4 {
+  grid-row: 5;
+}
+
+.form-row5 {
+  grid-row: 6;
+}
+
+.form-row6 {
+  grid-row: 7;
+}
+
+.form-row7 {
+  grid-row: 8;
+}
+
+.form-row8 {
+  grid-column: 1 / 4;
+  justify-self: center;
+  grid-row: 9;
+}
+
+/* form fields*/
+.form-field1, .form-field2, .form-field3, .form-field4, .form-field5, .form-field6, .form-field7, .form-field8, .form-field9 {
+  grid-column: 2 / 3;
+}
+.form-field1 {
+  grid-row: 2;
+}
+
+.form-field2 {
+  grid-row: 3;
+}
+
+.form-field3 {
+  grid-row: 4;
+}
+
+.form-field4 {
+  grid-row: 5;
+}
+
+.form-field5 {
+  grid-row: 6;
+}
+
+.form-field6 {
+  grid-row: 7;
+}
+
+.form-field7 {
+  grid-row: 8;
+}
+
+.form-field8 {
+  grid-row: 9;
 }

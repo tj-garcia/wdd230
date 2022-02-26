@@ -58,7 +58,7 @@
                   <li><a href="index.html">Home</a></li>
                   <li><a href="index.html">Discover</a></li>
                   <li><a href="index.html">Directory</a></li>
-                  <li><a href="join.html">Join</a></li>
+                  <li><a href="index.html">Join</a></li>
                   <li><a href="index.html">Contact</a></li>
                 </ul>
             </nav>        
@@ -75,54 +75,115 @@
         </div>
          
         <div class="home-grid">
-            <!--
-            <div class="home-headline-1">
-               <h1>Site Head</h1>  
-            </div>
-            -->
-            <div class="home-paragraph-2"> 
-                <p>Hero with site name and call to action</p>
-            </div>
-            <div class="home-paragraph-3">
-                <p>Event</p>
-            </div>
-            <div class="home-paragraph-4">
-                <p>Weather</p>
-            </div>
-            <div class="home-paragraph-5">
-                <p>News Release</p>
-            </div>
-            <div class="home-paragraph-6">
-                <p>Join</p>
-            </div>
-            <div class="home-paragraph-7">
-                <p>Spotlight 1</p>
-            </div>
-            <div class="home-paragraph-8">
-                <p>Spotlight 2</p>
-            </div>
-            <div class="home-paragraph-9">
-                <p>Spotlight 3</p>
-            </div>            
-            <!--
-            <div class="home-left-img">
-            <img src="images/logo.jpg" alt="Services" />   
-            </div>
-            <div class="home-center-img">
-              <img src="images/logo.jpg"  alt="Personal" />   
-            </div>
-            <div class="home-right-img">
-              <img src="images/logo.jpg"  alt="WEB" />   
-            </div>          
-            -->
-        </div>
+            <form class="home-form" method="" action="thankyou.html" onsubmit="return validate()" >
+                <div class="form-table">
+                        <div class="form-title">
+                            <h1>Join Form</h1>
+                        </div>
+                        <div class="form-row1">   
+                        <!-- Name  -->
+                        <label for="uname">Name *</label>
+                        </div>
+                        <div class="form-field1">
+                        <input type="text" name = "uname" placeholder="Name" required>
+                        </div>
 
+                        <div class="form-row2">
+                        <!-- Last name -->
+                        <label for="lastName">Last Name *</label>
+                        </div>
+                        <div class="form-field2">
+                        <input type="text" placeholder="lastName" name="lastName" required>
+                        </div>
+
+                        <div class="form-row3">
+                        <!-- It must be filled. No blank or empty name is allowed. 
+                            Only Letters and blank space between them -->
+                        <label for="title">Business Position</label>
+                        </div>
+                        <div class="form-field3">
+                        <input type="text" placeholder="Business Position" name="title" pattern="[a-zA-Z_]+( [a-zA-Z]+)*$" minlength="7">
+                        </div>
+
+                        <div class="form-row4">
+                        <!-- email  -->
+                        <label for="email">Email*</label>
+                        </div>
+                        <div class="form-field4">
+                        <input type="email" placeholder="Email" name="email" required>
+                        </div>
+
+                        <div class="form-row5">
+                        <!-- It must be filled. No blank or empty phone is allowed. 
+                            validate with javascript example -->
+                        <label for="phone">Phone*</label>
+                        </div>
+                        <div class="form-field5">
+                        <input type="phone" placeholder="phone" name="phone" id="phone" required>
+                        </div>
+
+                        <div  class="form-row6">
+                            <label for="position">Position</label>
+                        </div>
+                        <div class="form-field6">
+                            <select name="position">
+                                <option value="NP">Non Profit</option>
+                                <option value="Bronze">Bronze</option>
+                                <option value="Silver">Silver</option>
+                                <option value="Gold">Gold</option>
+                            </select>                
+                        </div>
+
+                        <div class="form-row7">
+                            <label for="description">Description</label>
+                        </div>
+                        <div class="form-field7">
+                            <textarea name="description" placeholder="Briefly describe your business.">
+                                
+                            </textarea>
+                        </div>    
+
+                        <div class="form-row8">
+                            <label for="submit"></label>
+                            <input type="submit"  value="Send">
+                        </div>
+
+                        <div class="form-row9">
+                            
+                        </div>
+                        <div class="form-field9">
+                            <input type="hidden" name="today_date" id = "today_date" value="" >
+                        </div>                        
+                    
+                
+                </div> <!-- form div-->
+            </form>
+        </div>     <!-- home div-->
     </main>
     <footer>
-        
               <p class="social-copy">&copy; 2021 Leonardo Infante Chamber Commerce || Tyrone Garcia - WDD-230 || <span id="LastModification"></span>  </p>
     </footer>
   </div>  
 </body>
+<script type="text/javascript">
+    function validate() {
+        var user = document.getElementById("phone").value;
+        var re =  /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/; /*/^[7-9][0-9]{9}$/; onclick="validate();" */
+        var element = document.getElementById("phone");
+        if (re.test(user)) {
+            element.style.backgroundColor='#ffff';                
+            element.style.color = 'black';
+            return true;
+        }
+        else {
+            element.style.backgroundColor='#900';                
+            element.style.color = '#ffff';
+            /*document.getElementById('phone').style.backgroundColor = 'red';
+            document.getElementById('phone').style.color = '#ffff';*/
+            return false;
+        }
+    }
+</script>
+
 <script src="js/functions.js"></script>
 </html>

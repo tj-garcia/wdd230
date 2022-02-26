@@ -48,3 +48,7 @@ try {
 document.querySelector(
 	"#LastModification"
 ).textContent = `Last Modification: ${document.lastModified}`;
+
+document.getElementById(
+	"today_date"
+).value = fulldate;
