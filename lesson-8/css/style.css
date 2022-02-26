@@ -61,7 +61,8 @@ form {
   }
   
   th {
-    background-color: var(--back2);
+    background-color: hsl(202, 56%, 38%); /*var(--back2);*/
+    color: #f1f1f1;
   }
   
   td {
@@ -69,9 +70,23 @@ form {
   }
   
   tbody tr:nth-child(even) {
-    background-color: hsl(147, 38%, 73%); /*var(--zebra);*/
+    background-color: hsl(147, 38%, 73%);
   }
- 
+  
+  tbody tr:nth-child(odd) {
+    background-color: hsl(180, 31%, 94%) ;
+  }
+
+  #other_color {
+    background-color: hsl(202, 56%, 38%);
+    color: #f1f1f1;
+}
+
+
+
+
+
+
 
   @media (max-width:500px) {
     .no_mobile{
