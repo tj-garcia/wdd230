@@ -72,7 +72,7 @@ form {
     background-color: var(--zebra);
   }
 tbody tr:nth-child(odd) {
-	background-color: #75BFA5;
+	background-color:hsl(147, 38%, 73%);
 }  
 
   @media (max-width:500px) {
