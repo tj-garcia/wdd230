@@ -71,9 +71,7 @@ form {
   tbody tr:nth-child(even) {
     background-color: hsl(147, 38%, 73%); /*var(--zebra);*/
   }
-tbody tr:nth-child(odd) {
-	background-color:hsl(147, 38%, 73%);
-}  
+ 
 
   @media (max-width:500px) {
     .no_mobile{
