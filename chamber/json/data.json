@@ -1,1 +1,45 @@
+{
+  "companies": [
+    {
+      "name": "UNICASA",
+      "addresse": "Romulo Gallegos Avenue. Valle de la Pascua - Guárico",
+      "phone": "+58 2353333233",
+      "website": "www.unicasa.com",
+      "imageurl": "http://placeimg.com/640/480/any"
+      "order": 1,
+    },
+    {
+      "name": "MAKRO",
+      "addresse": "Romulo Gallegos Avenue. Valle de la Pascua - Guárico",
+      "phone": "+58 2354443233",
+      "website": "www.makro.com",
+      "imageurl": "http://placeimg.com/640/480/any"
+      "order": 2,
+    },
+    {
+      "name": "FARMAHORRO",
+      "addresse": "Libertador Avenue. Valle de la Pascua - Guárico",
+      "phone": "+58 2355553233",
+      "website": "www.farmahorro.com",
+      "imageurl": "http://placeimg.com/640/480/any"
+      "order": 3,
+    },
+    {
+      "name": "CANTV",
+      "addresse": "Retumbo Street. Valle de la Pascua - Guárico",
+      "phone": "+58 2356663233",
+      "website": "www.cantv.com",
+      "imageurl": "http://placeimg.com/640/480/any"
+      "order": 4,
+    },
+    {
+      "name": "PDVSA",
+      "addresse": "Gonsalez Padron Street. Valle de la Pascua - Guárico",
+      "phone": "+58 2357773233",
+      "website": "www.pdvsa.com",
+      "imageurl": "http://placeimg.com/640/480/any"
+      "order": 5,
+    },
 
+  ]
+}
