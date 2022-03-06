@@ -72,7 +72,7 @@ function displayCompanies(companies) {
   function listCompanies(companies) {
       //let tabla_1 = document.getElementById("tabla");
       //let tblBody = document.createElement("tbody");
-      
+      document.getElementById("show_list").style.display = "none"; // hide
       let tblBody = document.querySelector("tbody");
       let hilera = document.createElement("tr");
 
